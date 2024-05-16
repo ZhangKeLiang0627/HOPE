@@ -1,0 +1,72 @@
+{
+  "files.associations": {
+    "ws2812b.h": "c",
+    "stm32f4xx_tim.h": "c",
+    "sys.h": "c",
+    "stm32f4xx.h": "c",
+    "stm32f4xx_exti.h": "c",
+    "stm32f4xx_gpio.h": "c",
+    "st7789_init.h": "c",
+    "spi.h": "c",
+    "stm32f4xx_spi.h": "c",
+    "lcd.h": "c",
+    "hugo_ui.h": "c",
+    "hugoui_user.h": "c",
+    "malloc.h": "c",
+    "usart.h": "c",
+    "stm32f4xx_conf.h": "c",
+    "sstream": "c",
+    "qmc5883l.h": "c",
+    "string": "c",
+    "array": "c",
+    "string_view": "c",
+    "memory": "c",
+    "myiic2.h": "c",
+    "math.h": "c",
+    "ellipsoid fitting.h": "c",
+    "inv_mpu.h": "c",
+    "inv_mpu_dmp_motion_driver.h": "c",
+    "mpu6050.h": "c",
+    "stm32f4xx_rcc.h": "c",
+    "led.h": "c",
+    "key.h": "c",
+    "delay.h": "c",
+    "w25qxx.h": "c",
+    "MMC_SD.C": "cpp",
+    "oledfont.h": "c",
+    "oled.h": "c",
+    "myiic.h": "c",
+    "pcf8563.h": "c",
+    "diskio.h": "c",
+    "fattester.h": "c",
+    "exfuns.h": "c",
+    "fontupd.h": "c",
+    "text.h": "c",
+    "sht30.h": "c",
+    "hugoui_bmp.h": "c",
+    "sdio_sdcard.h": "c",
+    "bmp280.h": "c",
+    "encoder.h": "c",
+    "beeper.h": "c",
+    "filesystem.h": "c",
+    "ff.h": "c"
+  },
+  "MicroPython.executeButton": [
+    {
+      "text": "▶",
+      "tooltip": "运行",
+      "alignment": "left",
+      "command": "extension.executeFile",
+      "priority": 3.5
+    }
+  ],
+  "MicroPython.syncButton": [
+    {
+      "text": "$(sync)",
+      "tooltip": "同步",
+      "alignment": "left",
+      "command": "extension.execute",
+      "priority": 4
+    }
+  ]
+}
