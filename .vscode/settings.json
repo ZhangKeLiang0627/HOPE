@@ -1,0 +1,43 @@
+{
+    "MicroPython.executeButton": [
+        {
+            "text": "▶",
+            "tooltip": "运行",
+            "alignment": "left",
+            "command": "extension.executeFile",
+            "priority": 3.5
+        }
+    ],
+    "MicroPython.syncButton": [
+        {
+            "text": "$(sync)",
+            "tooltip": "同步",
+            "alignment": "left",
+            "command": "extension.execute",
+            "priority": 4
+        }
+    ],
+    "files.associations": {
+        "malloc.h": "c",
+        "random.h": "c",
+        "stdio.h": "c",
+        "hugoui_user.h": "c",
+        "ff.h": "c",
+        "ffconf.h": "c",
+        "diskio.h": "c",
+        "integer.h": "c",
+        "exfuns.h": "c",
+        "filesystem.h": "c",
+        "fattester.h": "c",
+        "oledfont.h": "c",
+        "oled.h": "c",
+        "stdlib.h": "c",
+        "usart.h": "c",
+        "stm32f4xx.h": "c",
+        "lcdfont.h": "c",
+        "delay.h": "c",
+        "mqttkit.h": "c",
+        "sys.h": "c",
+        "multi_button_user.h": "c"
+    }
+}
