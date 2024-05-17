@@ -7,3 +7,6 @@
 ---
 
 ## 仓库文档正在完善中！
+
+硬件开源地址：https://oshwhub.com/hugego/hope-stm32f401-based-mini-devframework
+视频介绍：https://www.bilibili.com/video/BV1Rz42117sr/
