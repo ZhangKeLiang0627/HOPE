@@ -649,7 +649,19 @@ static void EventBluetooth(void)
     }
     else if (ui_Key_num == 2)
     {
-        img_a = 4;
+        uint8_t isExitAnimFinish = 1;
+        // Oled_u8g2_ClearBuffer();
+        Oled_u8g2_DrawBox(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
+        Oled_u8g2_SendBuffer();
+
+        while (isExitAnimFinish)
+        {
+            // Oled_u8g2_ClearBuffer();
+            isExitAnimFinish = HugoUI_Animation_Blur();
+            Oled_u8g2_SendBuffer();
+        }
+
+            img_a = 4;
         BlutoothFuncEnter_flag = 1;
         icon_move_x = 128; // 倘若跳转到custom界面可以起到一个复位动效
     }
