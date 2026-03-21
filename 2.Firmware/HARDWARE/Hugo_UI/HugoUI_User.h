@@ -82,7 +82,7 @@ void EventShowAboutUI(void);
 
 void EventTreasureBox(void);
 void EventChartTest(void);
-void EventBlueTeeth(void);
+void EventBluetooth(void);
 
 void EventMagnetometer(void);
 void EventShowCompassUI(void);

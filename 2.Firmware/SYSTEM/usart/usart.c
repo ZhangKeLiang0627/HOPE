@@ -89,7 +89,7 @@ void USART6_Init(u32 bound)
 	GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_UP;		   // 上拉
 	GPIO_Init(GPIOC, &GPIO_InitStructure);
 
-	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_5;		  // GPIOC8&blueteeth_state
+	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_5;		  // GPIOC8&bluetooth_state
 	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IN;	  // 复用功能
 	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz; // 速度50MHz
 	GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_DOWN;	  // 上拉

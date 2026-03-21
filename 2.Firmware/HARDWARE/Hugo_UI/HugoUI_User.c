@@ -155,7 +155,7 @@ void HugoUI_InitLayout(void)
     pageMain->AddItem(pageMain, "Gyro", ITEM_CALL_FUNCTION, EventShowGyroUI)
         ->SetIconSrc(Poet_BMP);
 
-    pageMain->AddItem(pageMain, "BlueTeeth", ITEM_CALL_FUNCTION, EventBlueTeeth)
+    pageMain->AddItem(pageMain, "Bluetooth", ITEM_CALL_FUNCTION, EventBluetooth)
         ->SetIconSrc(Knife_BMP);
 
     pageMain->AddItem(pageMain, "RealTime", ITEM_CALL_FUNCTION, EventRealTime)
@@ -468,7 +468,7 @@ void EventChartTest(void)
     }
 }
 
-void BlueTeethSerialCmd(void)
+void BluetoothSerialCmd(void)
 {
     if ((USART6_RX_STA & 0x8000) != 0)
     {
@@ -587,30 +587,30 @@ void BlueTeethSerialCmd(void)
     }
 }
 
-static void EventBlueTeeth(void)
+static void EventBluetooth(void)
 {
-    static uint8_t BluteethInit_flag = 1;
-    static uint8_t BluteethFuncEnter_flag = 1;
+    static uint8_t BlutoothInit_flag = 1;
+    static uint8_t BlutoothFuncEnter_flag = 1;
     static float img_a = 4, img_a_trg = 24;
 
     // 初始化
-    if (BluteethInit_flag)
+    if (BlutoothInit_flag)
     {
         USART6_Init(115200);
 
-        BluteethInit_flag = 0;
+        BlutoothInit_flag = 0;
     }
 
     // 进入该Func时执行
-    if (BluteethFuncEnter_flag)
+    if (BlutoothFuncEnter_flag)
     {
         Oled_u8g2_DrawBox(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
         if (HugoUI_Animation_Blur() == 0)
-            BluteethFuncEnter_flag = 0;
+            BlutoothFuncEnter_flag = 0;
         return;
     }
 
-    BlueTeethSerialCmd(); // 执行BLE-SPP指令动作
+    BluetoothSerialCmd(); // 执行BLE-SPP指令动作
 
     // 判断蓝牙是否连接
     if (PCin(5) == 0)
@@ -650,7 +650,7 @@ static void EventBlueTeeth(void)
     else if (ui_Key_num == 2)
     {
         img_a = 4;
-        BluteethFuncEnter_flag = 1;
+        BlutoothFuncEnter_flag = 1;
         icon_move_x = 128; // 倘若跳转到custom界面可以起到一个复位动效
     }
 }
