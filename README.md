@@ -14,6 +14,16 @@
 
 - 视频介绍：https://www.bilibili.com/video/BV1Rz42117sr/
 
+## Branch
+
+- **HOPE-Link**：https://github.com/ZhangKeLiang0627/HOPE-Link
+
+基于HOPE的硬件，使用HAL重构软件，修复原标准库下部分偶现的bsp-bug，功能上尝试移植DAP-Link，实现了基于SWD的`脱机烧录/固件存储/烧录算法选择/局部擦除/下载地址选择`等，算是圆了我的`Ultra-Link`梦吧（笑。
+
+- **HOPE-Link-Client**：https://github.com/ZhangKeLiang0627/HOPE-Link-Client
+
+给HOPE vibe 了一个的屏幕的投屏上位机，支持跨平台 `Windows/MacOS/Ubuntu`.
+
 ## Snapshots
 
 <center><img src="3.pics/index-cover.jpg" width = "" height = ""></center>
