@@ -22,7 +22,7 @@
 
 - **HOPE-Link-Client**：https://github.com/ZhangKeLiang0627/HOPE-Link-Client
 
-给HOPE vibe 了一个的屏幕的投屏上位机，支持跨平台 `Windows/MacOS/Ubuntu`.
+给HOPE vibe 了一个屏幕的投屏上位机，支持跨平台 `Windows/MacOS/Ubuntu`.
 
 ## Snapshots
 
